@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #444444;
+    padding: 16px 0px;
+    font-size: 14px;
+    width: 100%;
+    position: fixed;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #515151;;
+}
+
+.lang {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+.soc-media {
+    display: inline-block;
+}
+
+.register {
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.lang span, a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.soc-media span, a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+header i {
+    color: white;
+    padding:0px  4px;
+}
+
+.media-links {
+    display: inline-block;
+    margin-left: 18px;
+}
+
+.lang-links {
+    display: inline-block;
+    margin-left: 18px;
+    color: white;
+}
+
+.register {
+    color: white;
+}
+
+.login {
+    color: white;
+    margin-left: 10px;
+}
+
+.logo img {
+    height: 46px;
+}
+
+.header-bottom {
+    padding-top: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-right li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 23px 6px 23px;
+    position: relative;
+   
+}
+
+.bottom-right li:after {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 1px;
+    background-color: #515151;;
+    top: 3px;
+    right: 0px;
+}
+
+.bottom-right li.active {
+    border-bottom: 1px solid #515151;
+}
+
+/* .bottom-right li:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 58px;
+    background-color: #515151;
+    bottom: -10px;
+    right: 11px;
+} */
+
+.bottom-right {
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+.bottom-right li a {
+    font-size: 12px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.intro-img {
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.intro-header {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.intro-header h1 {
+    font-size: 55px;
+    color: white;
+    line-height: 80px;
+    letter-spacing: 3px;
+    padding-bottom: 55px;
+   
+} 
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+    padding: 330px 0px;
+  }
+  
+.choose-day{
+    display:flex;
+    justify-content:space-between;
+    padding:5px;
+} 
+.choose-day label{
+    display:block;
+    color:white;
+    font-size:20px;
+    
+}
+.options{
+    margin-right:30;
+}
+.options input[type=date] {
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    color: white;
+    padding: 10px 0px;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.options input:focus {
+  outline: none;
+}
+
+.options select:focus{
+  outline: none;
+}
+
+.options select {
+  padding: 5px 140px 5px 11px;
+  margin-top: 9px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.options select  option{
+  color: black;
+}
+
+.options input[type=search]{
+  border: 1px solid white;
+  background: transparent;
+  padding: 5px 5px 5px 11px;
+  margin-top: 9px;
+  color: white;
+  text-transform:capitalize;
+}
+
+.overlay-room{
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: inherit;
+    z-index: 1;
+}
+
+.image-one, .image-two{
+    width:85% ;
+    height: 312px; 
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    background-position: center center ;
+    border-radius: 10px ;
+}
+
+.image-one{
+    position: relative;
+    top: 0px;
+    left: 80px;
+    /* height: 300px; */
+}
+
+.image-two{
+    position: absolute;
+    top: 140px;
+    left: 30px;
+}
+
+.about {
+    padding: 100px 0px 60px 0px;
+}
+
+.image-one:before{
+    position: absolute;
+    content: "";
+    height: 195px;
+    width: 12px;
+    background-color: #515151;
+    top: 0;
+    left: -90px;
+    border-radius: 20px;
+  }
+
+  .image-two:before {
+    position: absolute;
+    content: "";
+    height:190px;
+    width: 12px;
+    background-color: #116cf5;
+    top: 128px;
+    right: -75px;
+    border-radius: 20px;
+  }
+
+  .text-header {
+      font-size: 38px;
+      color: #515151;
+      letter-spacing: 1.2px;
+      padding-bottom: 30px;
+      padding-left: 25px;
+      margin-left: 20px;
+  }
+
+  .text-inner{ 
+      font-size: 18px;
+      letter-spacing: 1px;
+      padding-bottom: 5px;
+      line-height: 28px;
+      padding-left: 20px;
+  }
+
+  .text-link {
+      padding: 13px 30px;
+      color: white;
+      background-color: #515151;
+      margin: 55px 0px 0px 0px;
+      display: block;
+      width: fit-content;
+      border-radius: 10px;
+      top: 20px;
+      margin-left: 20px;
+      
+
+  }
+
+  .text-link:hover {
+    color: white;
+    background-color: rgb(117, 117, 117);
+    text-decoration: none;
+  }
+
+  .room-inner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+
+.about-rooms {
+    padding-top: 440px;
+}
+
+.about-luxury {
+    padding-top: 270px;
+}
+
+.room-text {
+    display:none;
+}
+
+.room-header h2 {
+    font-size: 24px;
+    text-align: center;
+}
+.luxury-header h2 {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+.luxury-text {
+    display: none;
+}
+
+.rooms a {
+    text-decoration: none;
+    color: white;
+}
+
+.room-text p {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.rooms h1 {
+    font-size: 22px;
+    padding: 10px 200px 80px 200px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.rooms {
+    padding: 80px 0px;
+}
+
+.rooms-text{
+    padding: 100px 0px;
+}
+
+.rooms-text p{
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 60px;
+    
+}
+
+.rooms-text a {
+    color: black;
+    text-align: center;
+    display: block;
+    padding: 30px 0px;
+    font-size: 25px;
+    text-transform:inherit;
+}
+
+rooms-link:after {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 1px;
+    background-color: #515151;;
+    top: 3px;
+    right: 0px;
+}
+
+.resturant{
+    background-color: black;
+}
+.resturant text h6{
+    font-size: 26px;
+    letter-spacing: 2px ;
+    line-height:30px ;
+    color: white ;
+    padding: 20px 0px;
+}
+.resturant-text p {
+    font-size: 38px ;
+    letter-spacing: 2px;
+    line-height: 60px ;
+    color:white ;
+    padding-bottom: 30px;
+
+}
+.resturant-text a {
+    font-size: 15px ;
+    letter-spacing: 2px;
+}
+restaurant-row {
+    padding: 150px 0px 50px 0px;
+}
+.restaurant-image img {
+    height: auto;
+    width: 1440px;
+    max-width: 100%;
+}
+.luxury {
+    padding: 150px 0px;
+}
+.luxury-text p{
+    font-size: 26px;
+    padding:0px 100px;
+    line-height:50 px;
+    text-align: center;
+}
+.luxury-one {
+height: 400px;
+width: 100%;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.luxury-two {
+    height: 400px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img-row {
+    margin-top: 80px;
+}
+
+
+
+
